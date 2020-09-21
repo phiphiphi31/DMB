@@ -16,6 +16,7 @@ Existing  template-based  trackers  usually  localize  the  target in each frame
 
 <p style="width:100%, text-align:center"><a href="url"><img src="https://github.com/phiphiphi31/DMB/blob/master/pipeline.pdf" width="640"></a></p>
 
+![pipeline](./pipeline.pdf)
 
 ## Installation
 
