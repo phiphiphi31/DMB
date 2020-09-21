@@ -45,7 +45,7 @@ python run_vot_test.py
 #### Training the network
 The DMB is pre-trained for segmentation task only on the YouTube VOS dataset. Thanks to the training dataset provided from D3S.
 
-####<b>D3S - A Discriminative Single Shot Segmentation Tracker.</b>
+######  <b>D3S - A Discriminative Single Shot Segmentation Tracker.</b>
 
 Please refer to https://github.com/alanlukezic/d3s.git for details to prepare training dataset.
 Please modify the dataset path in `libs/dataset/data.py` and `libs/train_data/vos.py`
