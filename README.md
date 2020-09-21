@@ -1,1 +1,59 @@
 # DMB
+
+# Discriminative Segmentation Tracking Using Dual Memory Banks
+
+Python (PyTorch) implementation of the DMB tracker.
+
+## Publication:
+Fei Xie.
+<b>Discriminative Segmentation Tracking Using Dual Memory Banks
+
+[Paper](https://arxiv.org/abs/191) </br>
+
+
+
+## Summary of the DMB tracker
+Existing  template-based  trackers  usually  localize  the  targetin  each  frame  with  bounding  box,  thereby  being  limitedin learning pixel-wise representation and handling complexand  non-rigid  transformation  of  the  target.  Further,  exist-ing  segmentation  tracking  methods  are  still  insufficient  inmodeling and exploiting dense correspondence of target pix-els across frames. To overcome these limitations, this workpresents a novel discriminative segmentation tracking archi-tecture equipped with dual memory banks, i.e., appearancememory  bank  and  spatial  memory  bank.  In  particular,  theappearance memory bank utilizes spatial and temporal non-local similarity to propagate segmentation mask to the currentframe,  and  we  further  treat  discriminative  correlation  filteras spatial memory bank to store the mapping between feature  map  and  spatial  map.  In particular, we store keys and values ofcontinuous frames in the AMB, and design a memory readerto compute the spatio-temporal attention to previous framesfor each pixel in the query image (i.e., the current frame).Thus,  albeit  the  network  parameters  of  the  memory  mod-ule are fixed, we can dynamically update the memory bankto achieve better tradeoff between model generalization andflexibility (See Fig. 2). We further treat DCF as spatial mem-ory bank (SMB) to model the mapping between feature mapand spatial map. Moreover, the SMB helps to filter out thedirty samples in AMB while AMB provides SMB with moreaccurate  target  geometrical  center.  This  mutual  promotionon  dual  memory  banks  greatly  boost  the  tracking  perfor-mance. We also adopt box-to-segmentation training and test-ing strategy to mitigate inaccurate representation of bound-ing box initialization during tracking.
+
+## Installation
+
+#### Clone the GIT repository.  
+```bash
+git clone https://github.com/phiphiphi31/DMB .
+```
+
+#### Install dependencies
+Run the installation script to install all the dependencies. You need to provide the conda install path (e.g. ~/anaconda3) and the name for the created conda environment (here ```pytracking```).  
+```bash
+bash install.sh conda_install_path pytracking
+```
+
+The tracker was tested on the Ubuntu 16.04 machine with 4 NVidia GTX Titan XP graphics card and cudatoolkit version 9.
+
+#### Test the tracker
+1.) Specify the path to the DMB by setting the `params.pth_path` in the `pytracking/parameters/DMB/DMB_default_params.py`. <br/>
+2.) Specify the path to the VOT 2018 dataset by setting the `self.data_root` in the `votTester/vot.py`. <br/>
+3.) Activate the conda environment
+```bash
+conda activate pytracking
+```
+4.) Run the run_vot_test.py to run DMB using VOT18 sequences.  
+```bash
+python run_vot_test.py
+```
+
+#### Training the network
+The DMB is pre-trained for segmentation task only on the YouTube VOS dataset. Thanks to the training dataset provided from D3S.
+####<b>D3S - A Discriminative Single Shot Segmentation Tracker.</b>
+Please refer to https://github.com/alanlukezic/d3s.git for details to prepare training dataset.
+Please modify the dataset path in `libs/dataset/data.py` and `libs/train_data/vos.py`
+. Stage-1 pretrained model is provided. 
+```bash
+python train_stage2.py
+```
+
+## Pytracking
+We use a part of the python framework pytracking based on **PyTorch**. We would like to thank the authors Martin Danelljan and Goutam Bhat for  such a amazing framework. We also thanks to the author Alan Lukežič for his great work D3S!
+
+## Contact
+* Fei Xie (email: jaffe03@seu.edu.cn)
