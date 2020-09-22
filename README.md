@@ -7,13 +7,13 @@ Python (PyTorch) implementation of the DMB tracker.
 Fei Xie.
 <b>Discriminative Segmentation Tracking Using Dual Memory Banks
 
-[Paper](https://arxiv.org/abs/191) </br>
+[Paper](https://arxiv.org/pdf/2009.09669.pdf) </br>
 
 
 ## Summary of the DMB tracker 
 Existing  template-based  trackers  usually  localize  the  target in each frame with  bounding  box,  thereby  being  limited in learning pixel-wise representation and handling complex and  non-rigid  transformation  of  the  target.  Further,  existing  segmentation  tracking  methods  are  still  insufficient  in modeling and exploiting dense correspondence of target pixels across frames. To overcome these limitations, this work presents a novel discriminative segmentation tracking architecture equipped with dual memory banks, i.e., appearance memory  bank  and  spatial  memory  bank.  In  particular,  the appearance memory bank utilizes spatial and temporal non-local similarity to propagate segmentation mask to the current frame,  and  we  further  treat  discriminative  correlation  filter as spatial memory bank to store the mapping between feature  map  and  spatial  map.  In particular, we store keys and values of continuous frames in the AMB, and design a memory reader to compute the spatio-temporal attention to previous frames for each pixel in the query image (i.e., the current frame).Thus,  albeit  the  network  parameters  of  the  memory  module are fixed, we can dynamically update the memory bank to achieve better trade-off between model generalization and flexibility. We further treat DCF as spatial memory bank (SMB) to model the mapping between feature map and spatial map. Moreover, the SMB helps to filter out the dirty samples in AMB while AMB provides SMB with more accurate  target  geometrical  center.  This  mutual  promotion on  dual  memory  banks  greatly  boost  the  tracking  performance. We also adopt box-to-segmentation training and testing strategy to mitigate inaccurate representation of bounding box initialization during tracking.
 
-![pipeline](./pipeline.pdf)
+![pipeline](./pipeline.png)
 
 ## Installation
 
@@ -44,10 +44,12 @@ python run_vot_test.py
 
 #### Training the network
 The DMB is pre-trained for segmentation task only on the YouTube VOS dataset. Thanks to the training dataset provided from D3S.
-####<b>D3S - A Discriminative Single Shot Segmentation Tracker.</b>
+
+######  <b>D3S - A Discriminative Single Shot Segmentation Tracker.</b>
+
 Please refer to https://github.com/alanlukezic/d3s.git for details to prepare training dataset.
 Please modify the dataset path in `libs/dataset/data.py` and `libs/train_data/vos.py`
-. Stage-1 pretrained model is provided. 
+. Stage-1 pretrained model and training setting file will be available soon. 
 ```bash
 python train_stage2.py
 ```
