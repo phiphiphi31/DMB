@@ -49,7 +49,7 @@ The DMB is pre-trained for segmentation task only on the YouTube VOS dataset. Th
 
 Please refer to https://github.com/alanlukezic/d3s.git for details to prepare training dataset.
 Please modify the dataset path in `libs/dataset/data.py` and `libs/train_data/vos.py`
-. Stage-1 pretrained model is provided. 
+. Stage-1 pretrained model and training setting file will be available soon. 
 ```bash
 python train_stage2.py
 ```
