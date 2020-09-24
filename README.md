@@ -4,7 +4,7 @@
 Python (PyTorch) implementation of the DMB tracker.
 
 ## Publication:
-Fei Xie, Wankou Yang, Bo Liu, Kaihua Zhang, Wanli Xue Wangmeng Zuo.
+Fei Xie, Wankou Yang, Bo Liu, Kaihua Zhang, Wanli Xue, Wangmeng Zuo.
 
 
 <b>Discriminative Segmentation Tracking Using Dual Memory Banks
