@@ -11,9 +11,10 @@ Fei Xie, Wankou Yang, Bo Liu, Kaihua Zhang, Wanli Xue, Wangmeng Zuo.
 
 [Paper](https://arxiv.org/pdf/2009.09669.pdf) </br>
 
-The original paper will be reproduced as 
+#####
+The original paper will be reproduced as :
 
-Learning Spatio-Appearance Memory Network for High-Performance Visual Tracking
+<b>Learning Spatio-Appearance Memory Network for High-Performance Visual Tracking</br>
 
 Full version of code will be available after this method is publicily published. 
 
