@@ -1,5 +1,6 @@
 
-# Discriminative Segmentation Tracking Using Dual Memory Banks
+# Discriminative Segmentation Tracking Using Dual Memory Banks -> Learning Spatio-Appearance Memory Network for High-Performance Visual Tracking
+
 
 Python (PyTorch) implementation of the DMB tracker.
 
