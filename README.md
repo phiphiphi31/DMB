@@ -14,9 +14,7 @@ Fei Xie, Wankou Yang, Bo Liu, Kaihua Zhang, Wanli Xue, Wangmeng Zuo.
 
 ## Notification
 The original paper will be reproduced as :
-
 <b>Learning Spatio-Appearance Memory Network for High-Performance Visual Tracking</br>
-
 Full version of code will be available after this method is publicily published. 
 
 ## Summary of the DMB tracker 
