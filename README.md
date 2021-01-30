@@ -4,7 +4,7 @@
 
 Python (PyTorch) implementation of the DMB tracker.
 
-## Publication:
+## Released in Arxiv.:
 Fei Xie, Wankou Yang, Bo Liu, Kaihua Zhang, Wanli Xue, Wangmeng Zuo.
 
 
