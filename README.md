@@ -1,3 +1,26 @@
+###For VOT21 challenge model weight download:
+##### Download model weight 
+We provide the models of Four trackers *SAMN*, *DiMP_AMN*, *DualTFR*, *DualTFRst*, here.
+
+Note that the *AlphaRefine* (https://github.com/MasterBin-IIAU/AlphaRefine) model 
+and *SuperDiMP* (https://github.com/visionml/pytracking) model are the same
+with the original author.
+
+| Tracker        |      model quantity    |  model name    | 
+|:--------------:|:----------------:|:----------------:|
+| SAMN |   1  | SAMN.tar |
+| DiMP_AMN |   2  | super_dimp.pth.tar,  SAMN.tar |
+| DualTFR |  2   | DualTFR.tar,  ar.pth.tar |
+| DualTFRst |  2   | DualTFRst.tar,  ar.pth.tar  |
+
+Models can be downloaded from BaiduNetDisk or GoogleDrive:
+
+BaiduNetDisk:
+
+https://pan.baidu.com/s/1RHA7HVlXtNEzYPGIjJbQ-g (sruh) 
+
+GoogleDrive: 
+https://drive.google.com/drive/folders/1Z61_mfh2vwzqDxejt5idBOgYhWOCZOr5?usp=sharing
 
 # Discriminative Segmentation Tracking Using Dual Memory Banks ---> Learning Spatio-Appearance Memory Network for High-Performance Visual Tracking
 
@@ -67,4 +90,3 @@ We use a part of the python framework pytracking based on **PyTorch**. We would 
 ## Contact
 * Fei Xie (email: jaffe03@seu.edu.cn)
 * Wankou Yang (email: wkyang@seu.edu.cn)
-
