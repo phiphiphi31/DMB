@@ -1,6 +1,6 @@
 ### For VOT21 challenge model weight download:
 ##### Download model weight 
-We provide the models of Four trackers *SAMN*, *DiMP_AMN*, *DualTFR*, *DualTFRst*, here.
+We provide the models of Four trackers *SAMN*, *SAMN_DiMP*, *DualTFR*, *DualTFRst*, here.
 
 Note that the *AlphaRefine* (https://github.com/MasterBin-IIAU/AlphaRefine) model 
 and *SuperDiMP* (https://github.com/visionml/pytracking) model are the same
@@ -9,7 +9,7 @@ with the original author.
 | Tracker        |      model quantity    |  model name    | 
 |:--------------:|:----------------:|:----------------:|
 | SAMN |   1  | SAMN.tar |
-| DiMP_AMN |   2  | super_dimp.pth.tar,  SAMN.tar |
+| SAMN_DiMP |   2  | super_dimp.pth.tar,  SAMN.tar |
 | DualTFR |  2   | DualTFR.tar,  ar.pth.tar |
 | DualTFRst |  2   | DualTFRst.tar,  ar.pth.tar  |
 
