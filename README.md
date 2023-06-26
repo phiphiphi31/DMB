@@ -90,5 +90,4 @@ python train_stage2.py
 We use a part of the python framework pytracking based on **PyTorch**. We would like to thank the authors Martin Danelljan and Goutam Bhat for  such a amazing framework. We also thanks to the author Alan Lukežič for his great work D3S!
 
 ## Contact
-* Fei Xie (email: jaffe03@seu.edu.cn)
-* Wankou Yang (email: wkyang@seu.edu.cn)
+* Fei Xie (email: 	jaffe0319@gmail.com)
